@@ -23,7 +23,8 @@ resource "aws_instance" "ubuntu" {
   instance_type = var.instance_type
 
   tags = {
-    Name = var.instance_name
+    Name      = var.instance_name
+    yor_trace = "c5347dd8-139b-4f08-bbf7-0ff43fe8572e"
   }
 }
 
@@ -32,6 +33,7 @@ resource "aws_instance" "ubuntu_1" {
   instance_type = var.instance_type
 
   tags = {
-    Name = var.instance_name
+    Name      = var.instance_name
+    yor_trace = "5fa3953c-a041-4ef7-bbd2-2670a3464b99"
   }
 }
